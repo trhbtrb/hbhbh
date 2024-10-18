@@ -1,0 +1,93 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.table-container {
+    width: 70%;
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 18px;
+    table-layout: fixed;
+}
+
+thead th {
+    background-color: green;
+    color: white;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+tbody td {
+    padding: 15px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    word-wrap: break-word;
+}
+
+.activity-colored {
+    background-color: #98FB98;
+}
+
+.activity-plain {
+    background-color: #f4f7f6;
+}
+
+tbody tr:hover {
+    background-color: #e0ffe0;
+    cursor: pointer;
+}
+
+tbody td a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+tbody td a:hover {
+    color: green;
+}
+
+table {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .table-container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    table {
+        font-size: 16px;
+    }
+}
