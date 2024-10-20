@@ -53,7 +53,15 @@ tbody td {
 }
 
 .activity-plain {
-    background-color: #f4f7f6;
+    background-color: #98FB98;
+}
+
+.portfolio-sample {
+    background-color: #98FB98;
+}
+
+.blog-sample {
+    background-color: #98FB98;
 }
 
 tbody tr:hover {
