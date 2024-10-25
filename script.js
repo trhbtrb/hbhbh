@@ -13,7 +13,7 @@ function startTimer() {
     document.getElementById("timer-input").classList.add("hidden");
     document.getElementById("timer-display").classList.remove("hidden");
     document.getElementById("timer-options").classList.add("hidden");
-    
+
     countdownInterval = setInterval(updateCountdown, 1000);
     updateCountdown();
 }
@@ -24,7 +24,7 @@ function updateCountdown() {
     const minutes = Math.floor((timeRemaining % (60 * 60)) / 60);
     const seconds = timeRemaining % 60;
 
-    document.getElementById("countdown").textContent = 
+    document.getElementById("countdown").textContent =
         `${days}d ${hours}h ${minutes}m ${seconds}s`;
 
     if (timeRemaining <= 0) {
