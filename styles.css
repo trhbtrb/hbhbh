@@ -49,23 +49,11 @@ tbody td {
     word-wrap: break-word;
 }
 
-.activity-colored {
-    background-color: #98FB98;
-}
-
-.activity-plain {
-    background-color: #98FB98;
-}
-
-.portfolio-sample {
-    background-color: #98FB98;
-}
-
-.blog-sample {
-    background-color: #98FB98;
-}
-
-.contact-form {
+.activity-colored,
+.activity-plain,
+.portfolio-sample,
+.blog-sample,
+.timer-sample {
     background-color: #98FB98;
 }
 
@@ -105,64 +93,51 @@ table {
     }
 }
 
-/* Contact Form Styles */
-.form-container {
-    width: 70%;
-    max-width: 600px;
+/* Countdown Timer Styles */
+.timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    max-width: 400px;
     margin: 20px auto;
+    text-align: center;
 }
 
-.form-title {
+.timer-container h1 {
     font-size: 24px;
     color: #333;
-    text-align: center;
     margin-bottom: 20px;
 }
 
-.form-group {
-    margin-bottom: 15px;
+#timer-input, #timer-options {
+    margin-top: 20px;
 }
 
-.form-group label {
-    display: block;
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 5px;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: green;
-    box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
-}
-
-.submit-button {
-    width: 100%;
-    padding: 12px;
+button {
+    padding: 10px 20px;
     background-color: green;
     color: white;
-    font-size: 16px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
     text-transform: uppercase;
 }
 
-.submit-button:hover {
+button:hover {
     background-color: darkgreen;
+}
+
+.hidden {
+    display: none;
+}
+
+#countdown {
+    font-size: 24px;
+    font-weight: bold;
 }
